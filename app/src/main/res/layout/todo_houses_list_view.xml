@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false">
+
+    <RadioButton
+        android:id="@+id/is_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:focusable="false"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/house_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/important"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#8BC34A"
+        android:contentDescription="@string/mark_is_important"
+        android:focusable="false"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:srcCompat="@android:drawable/btn_star_big_off" />
+</androidx.appcompat.widget.LinearLayoutCompat>

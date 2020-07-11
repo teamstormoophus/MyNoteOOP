@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#DFE695"
+    android:orientation="vertical"
+    tools:context=".ui.todo.TodoListActivity">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@android:drawable/ic_popup_reminder" />
+
+    <RadioButton
+        android:id="@+id/todo_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/title_plain_text"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/todo_children"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="40dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_step"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#FBFBFB"
+        android:gravity="left"
+        android:paddingStart="50dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="5dp"
+        android:text="+   Add Step" />
+
+    <RadioButton
+        android:id="@+id/isToday"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:checked="false"
+        android:paddingStart="10dp"
+        android:text="@string/today"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/important"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingStart="10dp"
+        android:text="@string/important"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/todo_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:focusable="auto"
+        android:gravity="top"
+        android:hint="@string/content_plain_text"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:paddingStart="10dp" />
+
+    <ImageButton
+        android:id="@+id/remove_todo_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B5BF4D"
+        android:contentDescription="@string/delete_todo_list"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+</LinearLayout>

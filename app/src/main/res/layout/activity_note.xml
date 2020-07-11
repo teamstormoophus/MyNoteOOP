@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#DF9B9B"
+    android:orientation="vertical"
+    tools:context=".ui.notes.NoteActivity">
+
+    <EditText
+        android:id="@+id/note_title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:autofillHints=""
+        android:hint="@string/title_plain_text"
+        android:inputType="text|textCapSentences|textMultiLine"
+        android:paddingTop="25dp"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/note_content"
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:focusable="auto"
+        android:gravity="top"
+        android:hint="@string/content_plain_text"
+        android:inputType="textMultiLine"
+        android:paddingTop="25dp"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/note_delete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A3CCDF"
+        android:contentDescription="@string/delete_note"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+</LinearLayout>

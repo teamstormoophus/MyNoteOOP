@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_notes">
+
+    <fragment
+        android:id="@+id/nav_notes"
+        android:name="com.hulk.pandaminder.ui.notes.NotesFragment"
+        android:label="@string/menu_notes"
+        tools:layout="@layout/fragment_notes" />
+
+    <fragment
+        android:id="@+id/nav_important"
+        android:name="com.hulk.pandaminder.ui.important.ImportantFragment"
+        android:label="@string/menu_important"
+        tools:layout="@layout/fragment_important" />
+
+    <fragment
+        android:id="@+id/nav_tasks"
+        android:name="com.hulk.pandaminder.ui.todo.TodoFactoryFragment"
+        android:label="@string/menu_todo_factory"
+        tools:layout="@layout/fragment_todo_factory" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_list"-->
+<!--        android:name="com.hulk.pandaminder.ui.list.ListFragment"-->
+<!--        android:label="@string/menu_list"-->
+<!--        tools:layout="@layout/list_fragment" />-->
+</navigation>

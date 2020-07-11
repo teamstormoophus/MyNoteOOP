@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">PandaMinder</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Panda Minder</string>
+    <string name="nav_header_subtitle">pandaminder@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_notes">Notes</string>
+    <string name="menu_important">Important</string>
+    <string name="menu_todo_factory">Todo Factory</string>
+    <string name="add_note_dialog_title">Add Note</string>
+
+    <string name="new_house">New Todo House</string>
+    <string name="new_list">New Todo List</string>
+    <string name="content_plain_text">Content</string>
+    <string name="title_plain_text">Title</string>
+    <string name="delete_note">Delete Note</string>
+    <string name="today">Today</string>
+    <string name="important">Important</string>
+    <string name="remind_me">Remind Me</string>
+    <string name="add_step">Add Step</string>
+    <string name="delete_todo_list">Delete Todo List</string>
+    <string name="search">Search…</string>
+    <string name="mark_is_important">Mark is important</string>
+    <string name="are_you_sure">Are you sure ?</string>
+</resources>

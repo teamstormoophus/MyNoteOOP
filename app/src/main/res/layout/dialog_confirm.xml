@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EDF695"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingTop="40dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="40dp"
+        android:text="@string/are_you_sure"
+        android:textSize="36sp" />
+
+    <ImageButton
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="#7FEF84"
+        android:contentDescription="@string/delete_note"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#F36E6E"
+        android:contentDescription="@string/delete_note"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+</LinearLayout>
